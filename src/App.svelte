@@ -1,10 +1,38 @@
 <script lang="ts">
-	export let name: string;
+	import { Tabs, Tab, TabList, TabPanel } from 'svelte-tabs';
+	import Bw_server_offline from './bw_server_offline.svelte';
+	import Server_usage_bw_offline from './server_usage_bw_offline.svelte';
+	import Bw_server_online from './bw_server_online.svelte';
+	import Server_usage_bw_online from './server_usage_bw_online.svelte';
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<h1>SCHY</h1>
+
+	<Tabs>
+		<TabList>
+			<Tab>bw_server - offline</Tab>
+			<Tab>server_usage_bw - offline</Tab>
+			<Tab>bw_server - online</Tab>
+			<Tab>server_usage_bw - online</Tab>
+		</TabList>
+
+		<TabPanel>
+			<Bw_server_offline/>
+		</TabPanel>
+
+		<TabPanel>
+			<Server_usage_bw_offline/>
+		</TabPanel>
+
+		<TabPanel>
+			<Bw_server_online/>
+		</TabPanel>
+
+		<TabPanel>
+			<Server_usage_bw_online/>
+		</TabPanel>
+	</Tabs>
 </main>
 
 <style>
@@ -16,7 +44,7 @@
 	}
 
 	h1 {
-		color: #ff3e00;
+		color: dodgerblue;
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;
