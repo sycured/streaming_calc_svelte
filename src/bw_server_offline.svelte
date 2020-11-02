@@ -11,4 +11,4 @@
     Bitrate (kb/s): <input type="number" bind:value={bwsof_bitrate} min=0>
 </label>
 
-<p>Server bandwidth (Mib/s): {bwsof_nblisteners * bwsof_bitrate * 1000 / 1024 || 0}</p>
+<p>Server bandwidth (Mib/s): {125 * bwsof_nblisteners * bwsof_bitrate / 128 || 0}</p>

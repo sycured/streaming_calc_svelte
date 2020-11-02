@@ -23,5 +23,5 @@
 
 <p>
     Bandwidth used (GiB):
-    {subwof_nbdays * subwof_nbhours * 3600 * subwof_bitrate * 1000 / 8 * subwof_nblisteners / 1024 / 1024 || 0}
+    {28125 * subwof_nbdays * subwof_nbhours * subwof_bitrate * subwof_nblisteners / 65536 || 0}
 </p>
