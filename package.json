@@ -23,7 +23,7 @@
     "typescript": "^3.9.3"
   },
   "dependencies": {
-    "rollup-plugin-postcss": "^4.0.1",
+    "rollup-plugin-postcss": "^4.0.2",
     "sirv-cli": "^1.0.12",
     "svelte-fetch": "^0.2.0",
     "svelte-tabs": "^1.1.0"
