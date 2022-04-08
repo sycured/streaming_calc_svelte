@@ -4,7 +4,7 @@
     export let bwson_result: number = 0;
 
     async function do_post() {
-        const res = await fetch('https://schy.sycured.com/bwserver', {
+        const res = await fetch('https://scaw.sycured.com/bwserver', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

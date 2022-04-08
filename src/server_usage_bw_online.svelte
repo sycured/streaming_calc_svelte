@@ -6,7 +6,7 @@
     export let subwon_result: number = 0;
 
     async function do_post() {
-        const res = await fetch('https://schy.sycured.com/serverusagebw', {
+        const res = await fetch('https://scaw.sycured.com/serverusagebw', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
